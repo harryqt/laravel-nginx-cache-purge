@@ -1,0 +1,31 @@
+{
+    "name": "harryqt/laravel-nginx-cache-purge",
+    "description": "A laravel package for cache purging in nginx.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Harryqt\\NginxCachePurge\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "harry",
+            "email": "contact@harry.plus"
+        }
+    ],
+    "require": {
+        "symfony/filesystem": "^7.1",
+        "laravel/framework": "^11.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Harryqt\\NginxCachePurge\\NginxCachePurgeServiceProvider"
+            ]
+        }
+    }
+}
