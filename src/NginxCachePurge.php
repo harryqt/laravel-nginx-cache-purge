@@ -12,7 +12,7 @@ class NginxCachePurge
 
     public function __construct(private string $cacheDirPath)
     {
-        $this->fs = new Filesystem();
+        $this->fs = new Filesystem;
     }
 
     public function purgeUrl(string $url): void
@@ -20,6 +20,9 @@ class NginxCachePurge
         $this->purgeUrlPath(parse_url($url)['path'] ?? '/');
     }
 
+    /**
+     * Example: `hello-world`
+     */
     public function purgeUrlPath(string $urlPath): void
     {
         $hash = md5($urlPath);

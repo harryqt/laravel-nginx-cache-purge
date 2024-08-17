@@ -1,6 +1,6 @@
 {
     "name": "harryqt/laravel-nginx-cache-purge",
-    "description": "A laravel package for cache purging in nginx.",
+    "description": "Nginx cache purging package for laravel",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -10,7 +10,7 @@
     },
     "authors": [
         {
-            "name": "harry",
+            "name": "Harry",
             "email": "contact@harry.plus"
         }
     ],
