@@ -24,5 +24,9 @@ class NginxCachePurgeServiceProvider extends ServiceProvider implements Deferrab
         $this->publishes([
             __DIR__.'/../config/nginx-cache-purge.php' => config_path('nginx-cache-purge.php'),
         ]);
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([CachePurgeCommand::class]);
+        }
     }
 }

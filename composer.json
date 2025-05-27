@@ -1,6 +1,6 @@
 {
     "name": "harryqt/laravel-nginx-cache-purge",
-    "description": "Nginx cache purging package for laravel",
+    "description": "Nginx clear fastcgi cache from laravel",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -16,7 +16,7 @@
     ],
     "require": {
         "symfony/filesystem": "^7.1",
-        "laravel/framework": "^11.0"
+        "laravel/framework": "*"
     },
     "require-dev": {
         "laravel/pint": "^1.15"

@@ -21,7 +21,7 @@ class NginxCachePurge
     }
 
     /**
-     * Example: `hello-world`
+     * Eg: `/blog/my-post`
      */
     public function purgeUrlPath(string $urlPath): void
     {
